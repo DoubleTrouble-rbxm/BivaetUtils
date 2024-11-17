@@ -1,0 +1,21 @@
+name: BivaetUtils
+version: '1.0'
+main: me.bivaet.bivaetutils.BivaetUtils
+api-version: '1.20'
+softdepend: [PlaceholderAPI]
+commands:
+  mask:
+    description: Надеть или снять маску
+    permission: bivaetutils.mask
+    usage: /<command>
+  fakechat:
+    description: Написать сообщение в чат от лица другого игрока
+    permission: bivaetutils.fakechat
+    usage: /<command> [player] [message]
+permissions:
+  bivaetutils.mask:
+    description: Позволяет надевать маску
+    default: op
+  bivaetutils.fakechat:
+    description: Позволяет отправлять сообщения и комманды от лица другого игрока
+    default: op
